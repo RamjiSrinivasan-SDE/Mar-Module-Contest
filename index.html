@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Portal </h1>
+        <div class="input-container">
+            <input type="text" placeholder="Provide your name" id="name">
+            <input type="email" placeholder="Provide your email id" id="email" name="email" required>
+            <input type="number" placeholder="Please enter your CGPA" id="grade">
+            <input type="number" placeholder="Please provide your Age" id="age">
+            <input type="text" placeholder="Please specify your Degree" id="degree">
+        </div>
+    
+        <div class='button'>
+            <button type="submit" id="submit" onclick="addStudent()">Register</button>
+        </div>
+
+    
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search By Name, email or Degree">
+
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+    
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
